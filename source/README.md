@@ -1,5 +1,7 @@
 # Utility Bill Decoder (WTQ 2026 Build Track)
 
+   GitHub: https://github.com/hooria-adeel/utility-bill-decoder
+   kDSQqe6ZwEi5aYk#
 An AI-powered assistant that reads an electricity bill image (K-Electric, LESCO or IESCO), extracts the
 bill details as JSON (Level 1) and answers customer questions about the bill in plain English (Level 2).
 
@@ -78,3 +80,11 @@ No API keys and no `.env` file are included in this submission.
   and readings are null for K-Electric bills with several registers.
 - Very blurry or heavily tilted photos may produce `null` for some fields rather than a guess.
 - Questions about future bills can only be answered as labelled estimates, because the bill does not show future rates.
+
+   ## Demo UI (Streamlit)
+```
+   streamlit run app.py
+```
+   Upload a bill image to see extracted data, charts and plain-English answers. Requires `.env` with your API key.
+
+   ![Overview](../docs/screenshots/overview.png)
